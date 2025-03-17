@@ -1,0 +1,55 @@
+/* Fundo com gradiente */
+body {
+    background: linear-gradient(135deg, #000000, #222222);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-primary {
+    background: #ff5733;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #ff2e00;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    display: none;
+}
+
+a {
+    color: #ff5733;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

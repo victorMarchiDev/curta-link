@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>URL Shortener</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔗 Encurtador de URLs</h1>
+        <p>Transforme links longos em URLs curtas e fáceis de compartilhar!</p>
+
+        <div class="mb-3">
+            <input type="text" id="urlInput" class="form-control" placeholder="Cole sua URL aqui">
+        </div>
+
+        <button class="btn btn-primary w-100" onclick="shortenUrl()">Encurtar</button>
+
+        <div id="result">
+            <p>🔗 URL encurtada: <a id="shortUrl" href="#" target="_blank"></a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
