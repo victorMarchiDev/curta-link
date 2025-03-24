@@ -7,7 +7,7 @@ function shortenUrl() {
     copyButton.style.opacity = 1;  // Opacidade normal
     copyButton.style.transition = "none";  // Remove transição enquanto muda o estado do botão
 
-    fetch("http://localhost:8080/shorten-url", {
+    fetch("https://api-13ah.onrender.com/shorten-url", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: url })
